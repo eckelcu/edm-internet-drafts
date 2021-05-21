@@ -1,10 +1,10 @@
-# Find Code Related to an IETF Internet Draft or RFC
+# Find Code Related to an Internet-Draft or RFC
 
-This is the working area for the individual Internet-Draft, "Find Code Related to an IETF Internet Draft or RFC".
+This is the working area for the individual Internet-Draft, "Find Code Related to an Internet-Draft or RFC".
 
-* [Editor's Copy](https://eckelcu.github.io/edm-internet-drafts/#go.draft-eckel-edm-finding-code.html)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-eckel-edm-finding-code)
-* [Compare Editor's Copy to Individual Draft](https://eckelcu.github.io/edm-internet-drafts/#go.draft-eckel-edm-finding-code.diff)
+* [Editor's Copy](https://eckelcu.github.io/draft-eckel-edm-find-code/#go.draft-eckel-edm-find-code.html)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-eckel-edm-find-code)
+* [Compare Editor's Copy to Individual Draft](https://eckelcu.github.io/draft-eckel-edm-find-code/#go.draft-eckel-edm-find-code.diff)
 
 ## Building the Draft
 
@@ -21,4 +21,4 @@ This requires that you have the necessary software installed.  See
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/eckelcu/edm-internet-drafts/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/eckelcu/draft-eckel-edm-find-code/blob/main/CONTRIBUTING.md).
