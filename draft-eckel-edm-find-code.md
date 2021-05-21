@@ -1,7 +1,7 @@
 ---
-title: "Finding Code Related to an Internet-Draft or RFC"
-abbrev: "finding-code"
-docname: draft-eckel-edm-finding-code-latest
+title: "Find Code Related to an Internet-Draft or RFC"
+abbrev: "find-code"
+docname: draft-eckel-edm-find-code-latest
 category: info
 
 ipr: trust200902
