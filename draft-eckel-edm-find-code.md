@@ -1,4 +1,4 @@
----
+REMOVE ME---
 title: "Find Code Related to an Internet-Draft or RFC"
 abbrev: "find-code"
 docname: draft-eckel-edm-find-code-latest
@@ -17,6 +17,7 @@ author:
     ins: C. Eckel
     name: Charles Eckel
     organization: Cisco Systems
+    country: USA
     email: eckelcu@cisco.com
 
 normative:
@@ -49,14 +50,20 @@ The IETF chartered the GitHub Integration and Tooling [(GIT)](https://datatracke
 
 The IETF Hackathon {{?I-D.eckel-shmoo-ietf-hackathon}} encourages the IETF community to collaborate on running code related to existing and evolving Internet standards. Each Hackathon has a wiki that provides a breif description of each project. It is very common for there to be one of more I-Ds or RFCs associated with each project and for there to be one or more related code repositories. These resources are often listed on the wiki, but they are documented and shared with project teams in other ways as well. After the Hackathon, the wiki remains available, but the information within it is typically not updated or maintained.
 
-# Proposals
+# Proposal
 
-## from Tommy and Mark
-How about a link in data tracker to take you to said COTS service? (With a standard template, etc).
-My .02 -- I'd very much rather track this sort of thing in COTS services (e.g., GitHub) rather than commissioning yet another expensive, one-off, badly-maintained datatracker feature.
+The section specifies a set of practices that use existing mechanisms to provide a means of associating code with an I-D or RFC. By following these practices, one can make it easier for others working with the I-D or RFC to find such code.
 
-# Datatracker Mechanisms
-A few releases ago, we changed the way the datatracker allows you to
+Follow RFC 8xxx and 8xxx to GitHub for your I-D. Optionally use Martins setup GitHub repo.
+
+Use datatacker mechanism to point to resulting GtiHub repo when submitting I-D.
+
+Use wiki or specific implementations directory and README to include pointer to code.
+
+
+
+## Datatracker Mechanisms
+The datatracker allows you to
 make references to external resources (see the section labelled
 Additional Resources on a document's main page or on a groups /about page).
 
@@ -70,6 +77,17 @@ form - those are not used by the backup mechanism - there is no need to
 enter any such thing for this purpose).
 
 RjS
+
+
+## Errata
+
+
+
+## from Tommy and Mark
+How about a link in data tracker to take you to said COTS service? (With a standard template, etc).
+My .02 -- I'd very much rather track this sort of thing in COTS services (e.g., GitHub) rather than commissioning yet another expensive, one-off, badly-maintained datatracker feature.
+
+
 
 
 # Security Considerations
@@ -88,4 +106,12 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TBD.
+Vijay Gurbani [started](https://mailarchive.ietf.org/arch/msg/edm/1AV0yGy5cetLjmP6aOu0xyD2kHE/) the discussion that inspired this effort.
+
+Robert Spark highlighted a [datatracker mechanism](https://mailarchive.ietf.org/arch/msg/wgchairs/DA-fWpq_nsy_5kPhJEheBlyaaqI/) to add a reference to a GitHub repository or organization using the `github_repo` or `github_org` tag, respectively.
+
+Spencer Dawkins pointed out the RFC editor's ability to [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/) and noted that something similar could be done to point to code.
+
+Mark Nottingham provided an illustrative examples of how the [QUIC](https://github.com/quicwg/base-drafts/wiki/Implementations) working group uses wiki pages to track early implementations.
+
+Many opther people shared thoughts on the email lists for [WG Chairs](https://mailarchive.ietf.org/arch/browse/wgchairs/) and [EDM](https://mailarchive.ietf.org/arch/browse/edm/) about how to make it easier to find code. These helped shape the practices outlined in this document. 
