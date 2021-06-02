@@ -48,47 +48,31 @@ The IETF chartered the GitHub Integration and Tooling [(GIT)](https://datatracke
 
 ## Hackathon
 
-The IETF Hackathon {{?I-D.eckel-shmoo-ietf-hackathon}} encourages the IETF community to collaborate on running code related to existing and evolving Internet standards. Each Hackathon has a wiki that provides a breif description of each project. It is very common for there to be one of more I-Ds or RFCs associated with each project and for there to be one or more related code repositories. These resources are often listed on the wiki, but they are documented and shared with project teams in other ways as well. After the Hackathon, the wiki remains available, but the information within it is typically not updated or maintained.
+The IETF Hackathon {{?I-D.ietf-shmoo-hackathon}} encourages the IETF community to collaborate on running code related to existing and evolving Internet standards. Each Hackathon has a wiki that provides a brief description of each project. It is very common for there to be one of more I-Ds or RFCs associated with each project and for there to be one or more related code repositories. These resources are often listed on the wiki, but they are documented and shared with project teams in other ways as well. After the Hackathon, the wiki remains available, but the information within it is typically not updated or maintained.
 
 # Proposal
 
 The section specifies a set of practices that use existing mechanisms to provide a means of associating code with an I-D or RFC. By following these practices, one can make it easier for others working with the I-D or RFC to find such code.
 
-Follow RFC 8xxx and 8xxx to GitHub for your I-D. Optionally use Martins setup GitHub repo.
+## Datatracker
 
-Use datatacker mechanism to point to resulting GtiHub repo when submitting I-D.
+The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a [GitHub Organization](https://docs.github.com/en/organizations) or a [GitHub Repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository).
 
-Use wiki or specific implementations directory and README to include pointer to code.
+It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally these are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
 
+## GitHub Repository
 
+A GitHub repository should setup for an I-D as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides many nice features, including integrations with the Datatracker. The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D. 
 
-## Datatracker Mechanisms
-The datatracker allows you to
-make references to external resources (see the section labelled
-Additional Resources on a document's main page or on a groups /about page).
+A GitHub repository typically exists within a GitHub organization. However, this is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is not an appropriate GitHub organization to associate with I-D, it is best not to specify anything for the Datatracker `github_org` tag.
 
-If you are using github for your working group or a set of drafts,
-please consider pointing to the repository or organization using the
-github_repo and github_org tags respectively. The datatracker will use
-the urls you provide with those tags to backup the repositories.
+## README  
 
-(You'll see github and gitlab username tags in the hint for the edit
-form - those are not used by the backup mechanism - there is no need to
-enter any such thing for this purpose).
-
-RjS
-
+The GitHub repository associated with the I-D should include a [README](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-readmes). The README should include information about the repository, whether or not it is being used to collaborate on the I-D, and any code associated with the I-D. The latter may be achieved by including direct links to such code or by including links to other resources that include information about such code. These resources may be a file, folder, or [wiki](https://docs.github.com/en/communities/ within the GitHub repository or the GitHub organization associated with the I-D. The QUIC WG's [Implementations wiki](https://github.com/quicwg/base-drafts/wiki/Implementations) is an example.
 
 ## Errata
 
-
-
-## from Tommy and Mark
-How about a link in data tracker to take you to said COTS service? (With a standard template, etc).
-My .02 -- I'd very much rather track this sort of thing in COTS services (e.g., GitHub) rather than commissioning yet another expensive, one-off, badly-maintained datatracker feature.
-
-
-
+In the event an I-D becomes an RFC, people looking for code are less likely to reference the Datatracker. Any GitHub organization or GitHub repository associated with the RFC should be made available as [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/).
 
 # Security Considerations
 
@@ -110,8 +94,12 @@ Vijay Gurbani [started](https://mailarchive.ietf.org/arch/msg/edm/1AV0yGy5cetLjm
 
 Robert Spark highlighted a [datatracker mechanism](https://mailarchive.ietf.org/arch/msg/wgchairs/DA-fWpq_nsy_5kPhJEheBlyaaqI/) to add a reference to a GitHub repository or organization using the `github_repo` or `github_org` tag, respectively.
 
+Martin Thompson created the [i-d-template](https://github.com/martinthomson/i-d-template) repository can be used to setup a GitHub repository for an I-D.
+
 Spencer Dawkins pointed out the RFC editor's ability to [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/) and noted that something similar could be done to point to code.
+
+Adam Roach played in important role in enabling the RFC editor's ability to [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/).
 
 Mark Nottingham provided an illustrative examples of how the [QUIC](https://github.com/quicwg/base-drafts/wiki/Implementations) working group uses wiki pages to track early implementations.
 
-Many opther people shared thoughts on the email lists for [WG Chairs](https://mailarchive.ietf.org/arch/browse/wgchairs/) and [EDM](https://mailarchive.ietf.org/arch/browse/edm/) about how to make it easier to find code. These helped shape the practices outlined in this document. 
+Many other people shared thoughts on the email lists for [WG Chairs](https://mailarchive.ietf.org/arch/browse/wgchairs/) and [EDM](https://mailarchive.ietf.org/arch/browse/edm/) about how to make it easier to find code. These helped shape the practices outlined in this document.
