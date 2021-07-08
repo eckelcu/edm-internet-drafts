@@ -62,9 +62,9 @@ It is recommended that this Datatracker mechanism be used to associate an approp
 
 ## GitHub Repository
 
-A GitHub repository should setup for an I-D as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the Datatracker. The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D. 
+A GitHub repository should be setup for an I-D as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the Datatracker. The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D. 
 
-A GitHub repository typically exists within a GitHub organization. However, this is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is not an appropriate GitHub organization to associate with I-D, it is best to not specify anything using the Datatracker `github_org` tag.
+A GitHub repository typically exists within a GitHub organization. This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker `github_org` tag.
 
 ## README
 
@@ -77,6 +77,10 @@ An Implementation Status section, as defined {{?RFC7942}}, should be added to an
 ## Errata
 
 In the event an I-D becomes an RFC, people looking for code are less likely to reference the Datatracker, and the Implementation Status section is likely to have been removed. Any GitHub organization or GitHub repository associated with the RFC should be made available as [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/).
+
+# Implementation Status
+
+The practices proposed in this document to make it easier to identify and find code associated with an Internet-Draft or RFC have been used for [draft-ietf-shmoo-hackathon](https://datatracker.ietf.org/doc/draft-ietf-shmoo-hackathon/). 
 
 # Security Considerations
 
@@ -96,7 +100,7 @@ This document has no IANA actions.
 
 Vijay Gurbani [started](https://mailarchive.ietf.org/arch/msg/edm/1AV0yGy5cetLjmP6aOu0xyD2kHE/) the discussion that inspired this effort.
 
-Robert Spark highlighted a [datatracker mechanism](https://mailarchive.ietf.org/arch/msg/wgchairs/DA-fWpq_nsy_5kPhJEheBlyaaqI/) to add a reference to a GitHub repository or organization using the `github_repo` or `github_org` tag, respectively.
+Robert Sparks highlighted a [datatracker mechanism](https://mailarchive.ietf.org/arch/msg/wgchairs/DA-fWpq_nsy_5kPhJEheBlyaaqI/) to add a reference to a GitHub repository or organization using the `github_repo` or `github_org` tag, respectively.
 
 Martin Thompson created the [i-d-template](https://github.com/martinthomson/i-d-template) repository can be used to setup a GitHub repository for an I-D.
 
