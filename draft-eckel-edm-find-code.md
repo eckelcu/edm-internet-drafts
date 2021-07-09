@@ -80,7 +80,7 @@ In the event an I-D becomes an RFC, people looking for code are less likely to r
 
 # Implementation Status
 
-The practices proposed in this document to make it easier to identify and find code associated with an Internet-Draft or RFC have been used for [draft-ietf-shmoo-hackathon](https://datatracker.ietf.org/doc/draft-ietf-shmoo-hackathon/). 
+The practices proposed in this document are followed by [draft-ietf-shmoo-hackathon](https://datatracker.ietf.org/doc/draft-ietf-shmoo-hackathon/). 
 
 # Security Considerations
 
