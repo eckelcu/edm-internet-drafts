@@ -54,29 +54,29 @@ The IETF Hackathon {{?I-D.ietf-shmoo-hackathon}} encourages the IETF community t
 
 This section specifies a set of practices that use existing mechanisms to associate code with an I-D or RFC. Following these practices makes it easier for others working with the I-D or RFC to find such code.
 
-## Datatracker
-
-The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a [GitHub Organization](https://docs.github.com/en/organizations) or a [GitHub Repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository).
-
-It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally these are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
-
 ## GitHub Repository
 
-A GitHub repository should be setup for an I-D as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the Datatracker. The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D. 
+A [GitHub repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository) should be setup for an I-D as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the [Datatracker](#datatracker). The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D.
 
-A GitHub repository typically exists within a GitHub organization. This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker `github_org` tag.
+A GitHub repository typically exists within a [GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations). This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker `github_org` tag.
 
 ## README
 
 The GitHub repository associated with the I-D should include a [README](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-readmes). The README should include information about the repository, whether or not it is being used to collaborate on the I-D, and any code associated with the I-D. The latter may be achieved by including direct links to such code or by including links to other resources that include information about such code. These resources may be a file, folder, or [wiki](https://docs.github.com/en/communities/) within the GitHub repository or the GitHub organization associated with the I-D. The QUIC WG's [Implementations wiki](https://github.com/quicwg/base-drafts/wiki/Implementations) is an example.
 
+## Datatracker
+
+The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a GitHub organization] or a GitHub repository].
+
+It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally these are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
+
 ## Implementation Status
 
 An Implementation Status section, as defined {{?RFC7942}}, should be added to an I-D. It should include any GitHub organization or GitHub repository associated with the I-D.
 
-## Errata
+## Inline Errata
 
-In the event an I-D becomes an RFC, people looking for code are less likely to reference the Datatracker, and the Implementation Status section is likely to have been removed. Any GitHub organization or GitHub repository associated with the RFC should be made available as [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/).
+In the event an I-D becomes an RFC, people looking for code are less likely to reference the Datatracker, and the Implementation Status section may have been removed or require updates. Any GitHub organization or GitHub repository associated with the RFC should be made available as [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/). An example of this is [RFC 3261 with inline errata](https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html). Inline errata views for v3 era RFCs are not supported at this time.
 
 # Implementation Status
 
