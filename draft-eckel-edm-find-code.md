@@ -8,6 +8,7 @@ ipr: trust200902
 area: General
 workgroup: edm
 keyword: Internet-Draft
+stream: IETF
 
 stand_alone: yes
 pi: [toc, sortrefs, symrefs]
@@ -26,13 +27,13 @@ informative:
 
 --- abstract
 
-Code related to existing IETF standards and ongoing standardization efforts may exist and be publicly accessible in many places. This document provides a set of practices to make it easier to identify and to find such code.
+Code related to existing IETF standards and ongoing standardization efforts may exist and be publicly accessible in many places. This document provides a set of practices to make it easier to identify and find such code.
 
 --- middle
 
 # Introduction
 
-Code related to existing IETF standards and ongoing standardization efforts may exist and be publicly accessible in many places. One common place is [GitHub](https://github.com/), but there are many others. The relationship of the code to corresponding IETF standards efforts may be direct, as in the case of a client or server that supports protocol defined by an [Internet-Draft (I-D)](https://www.ietf.org/standards/ids/). It may be indirect, as in a utility that helps analyze network traffic corresponding to this same protocol. The maturity and status of the code may vary considerably, including something written quickly as a proof of concept during a hackathon, a well established and supported implementation, or a legacy project no longer actively developed or maintained. The code must be publicly available, and preferably open source, though other terms of use may exist as well. In all cases, the code is potentially of interest and beneficial to people contributing to the definition, implementation, or deployment of an existing or evolving IETF standard. This document provides a set of practices make it easier to identify and to find such code.
+Code related to existing IETF standards and ongoing standardization efforts may exist and be publicly accessible in many places. One common place is [GitHub](https://github.com/), but there are many others. The relationship of the code to corresponding IETF standards efforts may be direct, as in the case of a client or server that supports protocol defined by an [Internet-Draft (I-D)](https://www.ietf.org/standards/ids/). It may be indirect, as in a utility that helps analyze network traffic corresponding to this same protocol. The maturity and status of the code may vary considerably, including something written quickly as a proof of concept during a hackathon, a well established and supported implementation, or a legacy project no longer actively developed or maintained. The code must be publicly available, and preferably open source, though other terms of use may exist as well. In all cases, the code may be of interest and beneficial to people contributing to the definition, implementation, or deployment of an existing or evolving IETF standard. This document provides a set of practices that make it easier to identify and find such code.
 
 # Existing IETF Processes and Procedures
 
@@ -40,15 +41,15 @@ The idea that code related to IETF standards is valuable is not new. Most IETF p
 
 ## Implementation Status
 
-A simple process that allows authors of I-Ds to record the status of known implementations by including an Implementation Status section is defined {{?RFC7942}}. The goal of this section is to allow the read to assign due consideration to I-Ds that have the benefit of running code, which may serve as evidence of valuable experimentation and feedback that make the protocols and corresponding documents more mature. However, it is stated that the Implementation Status section should be removed from I-Ds before they are published as RFCs. As a result, the value of the code is limited to that required to develop the standard, and the mechanism does not help find the code once the RFC is published.
+A simple process that allows authors of I-Ds to record the status of known implementations by including an Implementation Status section is defined in {{?RFC7942}}. The intent of this section is to allow the reader to assign due consideration to I-Ds that have the added benefit of running code, which may serve as evidence of valuable experimentation and feedback that make the protocols and corresponding documents more mature. However, it is stated that the Implementation Status section should be removed from I-Ds before they are published as RFCs. As a result, the value of the code is limited to that required to develop the standard, and the mechanism does not help find the code once the RFC is published.
 
 ## GitHub
 
-The IETF chartered the GitHub Integration and Tooling [(GIT)](https://datatracker.ietf.org/wg/git/about/) working group to establish and document practices and policies for use of GitHub by working groups for managing their work. This resulted in {{?RFC8874}}, which provides a set of guidelines for working groups that choose to use GitHub for their work, and {{?RFC8875}}, which specifies a set of administrative processes and conventions for such working groups. Within the working group, the concept of work is limited to the development of I-Ds that may eventually become RFCs. Any concept of code is limited to that which appears as text within these documents. In many cases, there is additional code that is closely associated with the documents but not contained within them. This code may be of interest to the community of people contributing to the development of the documents or to the implementation or deployment of eventual standards defined by them.
+The IETF chartered the GitHub Integration and Tooling [(GIT)](https://datatracker.ietf.org/wg/git/about/) working group to establish and document practices and policies for use of GitHub by working groups for managing their work. This resulted in {{?RFC8874}}, which provides a set of guidelines for working groups that choose to use GitHub for their work, and {{?RFC8875}}, which specifies a set of administrative processes and conventions for such working groups. Within the working group, the concept of work is limited to the development of I-Ds that may eventually become RFCs. Any concept of code is limited to that which appears as text within these documents. In many cases, there is additional code that is closely associated with the documents but not contained within them. This code may be of interest to the community of people contributing to the development of the documents or to the implementation or deployment of eventual standards defined by the documents.
 
 ## Hackathon
 
-The IETF Hackathon {{?I-D.ietf-shmoo-hackathon}} encourages the IETF community to collaborate on running code related to existing and evolving Internet standards. Each Hackathon has a wiki that provides a brief description of each project. It is common for there to be one of more I-Ds or RFCs associated with each project, and for there to be one or more related code repositories. These resources are often listed on the wiki, but they are documented and shared with project teams in other ways as well. After the Hackathon, the wiki remains available, but the information within it is typically not updated or maintained.
+The IETF Hackathon {{?RFC9311}} encourages the IETF community to collaborate on running code related to existing and evolving Internet standards. Each Hackathon has a wiki that provides a brief description of each project. It is common for there to be one of more I-Ds or RFCs associated with each project, and for there to be one or more related code repositories. These resources are often listed on the wiki, but they are documented and shared with project teams in other ways as well. After the Hackathon, the wiki remains available, but the information within it is typically not updated or maintained.
 
 # Proposal
 
@@ -56,31 +57,35 @@ This section specifies a set of practices that use existing mechanisms to associ
 
 ## GitHub Repository
 
-A [GitHub repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository) should be setup for an I-D as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the Datatracker (see [Datatracker](#datatracker)). The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D.
+A [GitHub repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository) should be setup for an I-D, as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the Datatracker (see [Datatracker](#datatracker)). The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D.
 
-A GitHub repository typically exists within a [GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations). This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker `github_org` tag.
+A GitHub repository typically exists within a [GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations). This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker `github_org` tag. Examples of such GitHub organizations are:
+
+- [IETF HTTP Working Group](https://github.com/httpwg)
+- [IETF QUIC Workign Group](https://github.com/quicwg)
+- [Internet Architecture Board](https://github.com/intarchboard)
 
 ## README
 
-The GitHub repository associated with the I-D should include a [README](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-readmes). The README should include information about the repository, whether or not it is being used to collaborate on the I-D, and any code associated with the I-D. The latter may be achieved by including direct links to such code or by including links to other resources that include information about such code. These resources may be a file, folder, or [wiki](https://docs.github.com/en/communities/) within the GitHub repository or the GitHub organization associated with the I-D. The QUIC WG's [Implementations wiki](https://github.com/quicwg/base-drafts/wiki/Implementations) is an example.
+The GitHub repository associated with the I-D should include a [README](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-readmes). The README should include information about the repository, whether or not it is being used to collaborate on the I-D, and any code associated with the I-D. The latter may be achieved by including direct links to such code or by including links to other resources that include information about such code. These resources may be a file, folder, or [wiki](https://docs.github.com/en/communities/) within the GitHub repository or the GitHub organization associated with the I-D. The QUIC Working Group's [Implementations wiki](https://github.com/quicwg/base-drafts/wiki/Implementations) is an example.
 
 ## Datatracker
 
-The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a GitHub organization] or a GitHub repository].
+The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a GitHub organization or a GitHub repository.
 
-It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally these are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
+It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repositry are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
 
 ## Implementation Status
 
-An Implementation Status section, as defined {{?RFC7942}}, should be added to an I-D. It should include any GitHub organization or GitHub repository associated with the I-D.
+An Implementation Status section, as defined {{?RFC7942}}, should be added to an I-D. It should state any GitHub organization or GitHub repository associated with the I-D.
 
 ## Inline Errata
 
-In the event an I-D becomes an RFC, people looking for code are less likely to reference the Datatracker, and the Implementation Status section may have been removed or require updates. Any GitHub organization or GitHub repository associated with the RFC should be made available as [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/). An example of this is [RFC 3261 with inline errata](https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html). Inline errata views for v3 era RFCs are not supported at this time.
+In the event an I-D becomes an RFC, people looking for code are less likely to reference the Datatracker, and the Implementation Status section may have been removed or outdated. Any GitHub organization or GitHub repository associated with the RFC should be made available as [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/). An example of this is [RFC 3261 with inline errata](https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html).
 
 # Implementation Status
 
-The practices proposed in this document are followed by [draft-ietf-shmoo-hackathon](https://datatracker.ietf.org/doc/draft-ietf-shmoo-hackathon/).
+The practices proposed in this document are followed by {{?RFC9311}}.
 
 # Security Considerations
 
