@@ -83,6 +83,16 @@ An Implementation Status section, as defined {{?RFC7942}}, should be added to an
 
 In the event an I-D becomes an RFC, people looking for code are less likely to reference the Datatracker, and the Implementation Status section may have been removed or outdated. Any GitHub organization or GitHub repository associated with the RFC should be made available as [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/). An example of this is [RFC 3261 with inline errata](https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html).
 
+## Known Limitations
+
+Known limitations of this proposal, and ongoing efforts to address them, include the following:
+
+- The ability within the Datatracker to associate `Additional Resources` with an I-D or RFC is not well known or used.
+  - The [IETF Tools Team](https://www.ietf.org/about/groups/tools/) has made the ability to view and edit `Additional Resources` more prominent in the Datatracker.
+  - The functionality is promoted in IETF Hackathons.
+- The ability and procedure to submit errata is not well known or used, and errata that is submitted is not always processed in a timely fashion.
+  - An experiment with [collaborative annotations](https://rfc-annotations.research.icann.org/) for RFCs related to DNS has been sponsored by ICANN.
+
 # Implementation Status
 
 The practices proposed in this document are followed by {{?RFC9311}}.
@@ -114,5 +124,7 @@ Spencer Dawkins pointed out the RFC editor's ability to [inline errata](https://
 Adam Roach played in important role in enabling the RFC editor's ability to [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/).
 
 Mark Nottingham provided an illustrative examples of how the [QUIC](https://github.com/quicwg/base-drafts/wiki/Implementations) working group uses wiki pages to track early implementations.
+
+Yaron Sheffer highlighted limitations with the current errata process and the existance of the ICANN project for collaborative annotations of RFCs related to DNS.
 
 Many other people shared thoughts on the email lists for [WG Chairs](https://mailarchive.ietf.org/arch/browse/wgchairs/) and [EDM](https://mailarchive.ietf.org/arch/browse/edm/) about how to make it easier to find code. These helped shape the practices outlined in this document.
