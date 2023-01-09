@@ -40,7 +40,7 @@ The idea that code related to IETF standards is valuable is not new. Most IETF p
 
 ## Implementation Status
 
-A simple process that allows authors of I-Ds to record the status of known implementations by including an Implementation Status section is defined {{?RFC7942}}. The goal of this section is to allow the read to assign due consideration to I-Ds that have the benefit of running code, which may serve as evidence of valuable experimentation and feedback that make the protocols and corresponding documents more mature. However, it is stated that the Implementation Status section should be removed from I-Ds before they are published as RFCs. As a result, the value of the code is limited to that required to develop the standard, and the mechanism does not help find the code once the RFC is published.  
+A simple process that allows authors of I-Ds to record the status of known implementations by including an Implementation Status section is defined {{?RFC7942}}. The goal of this section is to allow the read to assign due consideration to I-Ds that have the benefit of running code, which may serve as evidence of valuable experimentation and feedback that make the protocols and corresponding documents more mature. However, it is stated that the Implementation Status section should be removed from I-Ds before they are published as RFCs. As a result, the value of the code is limited to that required to develop the standard, and the mechanism does not help find the code once the RFC is published.
 
 ## GitHub
 
@@ -80,7 +80,7 @@ In the event an I-D becomes an RFC, people looking for code are less likely to r
 
 # Implementation Status
 
-The practices proposed in this document are followed by [draft-ietf-shmoo-hackathon](https://datatracker.ietf.org/doc/draft-ietf-shmoo-hackathon/). 
+The practices proposed in this document are followed by [draft-ietf-shmoo-hackathon](https://datatracker.ietf.org/doc/draft-ietf-shmoo-hackathon/).
 
 # Security Considerations
 
