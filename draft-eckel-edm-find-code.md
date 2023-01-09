@@ -123,8 +123,8 @@ Spencer Dawkins pointed out the RFC editor's ability to [inline errata](https://
 
 Adam Roach played in important role in enabling the RFC editor's ability to [inline errata](https://mailarchive.ietf.org/arch/msg/edm/ku3cd5xTla7tbtohVYWWW7-XTIg/).
 
-Mark Nottingham provided an illustrative examples of how the [QUIC](https://github.com/quicwg/base-drafts/wiki/Implementations) working group uses wiki pages to track early implementations.
+Mark Nottingham provided illustrative example of how the [QUIC](https://github.com/quicwg/base-drafts/wiki/Implementations) working group uses wiki pages to track early implementations.
 
-Yaron Sheffer highlighted limitations with the current errata process and the existance of the ICANN project for collaborative annotations of RFCs related to DNS.
+Yaron Sheffer highlighted limitations with the current errata process and the existance of the ICANN project for [collaborative annotations](https://rfc-annotations.research.icann.org/) of RFCs related to DNS.
 
 Many other people shared thoughts on the email lists for [WG Chairs](https://mailarchive.ietf.org/arch/browse/wgchairs/) and [EDM](https://mailarchive.ietf.org/arch/browse/edm/) about how to make it easier to find code. These helped shape the practices outlined in this document.
