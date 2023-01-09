@@ -2,7 +2,7 @@
 title: "Find Code Related to an Internet-Draft or RFC"
 abbrev: "find-code"
 docname: draft-eckel-edm-find-code-latest
-category: info
+category: bcp
 
 ipr: trust200902
 area: General
@@ -62,7 +62,7 @@ A [GitHub repository](https://docs.github.com/en/github/getting-started-with-git
 A GitHub repository typically exists within a [GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations). This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker `github_org` tag. Examples of such GitHub organizations are:
 
 - [IETF HTTP Working Group](https://github.com/httpwg)
-- [IETF QUIC Workign Group](https://github.com/quicwg)
+- [IETF QUIC Working Group](https://github.com/quicwg)
 - [Internet Architecture Board](https://github.com/intarchboard)
 
 ## README
@@ -73,7 +73,7 @@ The GitHub repository associated with the I-D should include a [README](https://
 
 The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a GitHub organization or a GitHub repository.
 
-It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repositry are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
+It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repository are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
 
 ## Implementation Status
 
