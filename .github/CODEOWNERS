@@ -1,2 +1,3 @@
-# Automatically generated CODEOWNERS file.
+# Automatically generated CODEOWNERS
+# Regenerate with `make update-codeowners`
 draft-eckel-edm-find-code.md eckelcu@cisco.com
