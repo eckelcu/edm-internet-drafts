@@ -57,7 +57,7 @@ This section specifies a set of practices that use existing mechanisms to associ
 
 ## GitHub Repository
 
-A [GitHub repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository) should be setup for an I-D, as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the Datatracker (see [Datatracker](#datatracker)). The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This should be done even if GitHub is not to be used to collaborate on the I-D.
+A [GitHub repository](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo#create-a-repository) should be setup for an I-D, as outlined in [Section 3.2 of RFC 8874](https://www.rfc-editor.org/rfc/rfc8874.html#section-3.2). The [i-d-template](https://github.com/martinthomson/i-d-template) can be used to get started. It provides useful features, including integration with the Datatracker (see [Datatracker](#datatracker)). The resulting repository should be associated with the I-D using the Datatracker `github_repo` tag. This may be done even if GitHub is not to be used to collaborate on the I-D.
 
 A GitHub repository typically exists within a [GitHub organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations). This is not always the case (e.g., a repository in a personal GitHub account), and even when it is, the GitHub organization may not be appropriate to associated with the I-D. In the event there is an appropriate GitHub organization, it should be associated with the I-D using the Datatracker `github_org` tag. Examples of such GitHub organizations are:
 
@@ -71,9 +71,26 @@ The GitHub repository associated with the I-D should include a [README](https://
 
 ## Datatracker
 
-The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a GitHub organization or a GitHub repository.
+The IETF [Datatracker](https://datatracker.ietf.org/) supports the association of `Additional Resources` with a `Document` (e.g., an I-D or RFC) or a `Group` (e.g., [working group](https://datatracker.ietf.org/wg/), [research group](https://datatracker.ietf.org/rg/)). An `Additional Resource` can be, among others things, a GitHub organization, GitHub repository, or code associated with an I-D or RFC.
 
-It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repository are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with the I-D using the `github_org` tag. A GitHub repository is associated with the I-D using the `github_repo` tag.
+It is recommended that this Datatracker mechanism be used to associate an appropriate GitHub organization and repository with an I-D. Ideally the organization and repository are setup per the guidelines in {{?RFC8874}} and {{?RFC8875}}. In the event the working group or research group is not using GitHub, or the I-D has not yet been adopted by the group, another GitHub organization or repository may be used instead. A GitHub organization is associated with an I-D using the `github_org` tag. A GitHub repository is associated with an I-D using the `github_repo` tag.
+
+It is also recommended that this Datatracker mechanism be used to associate code with an I-D. Code can be associated with an I-D using the `related_implementations` tag.
+
+### Permissions
+
+The ability to associate `Additional Resources` with an I-D is limited to:
+
+- Authors of individual drafts
+- Working group chairs of working group drafts
+- Working group chairs of RFCs produced by that working group
+
+Additionally, changes can be requested by the secretariat via <support@ietf.org>.
+
+### Guidance
+
+TODO
+
 
 ## Implementation Status
 
@@ -125,6 +142,6 @@ Adam Roach played in important role in enabling the RFC editor's ability to [inl
 
 Mark Nottingham provided illustrative example of how the [QUIC](https://github.com/quicwg/base-drafts/wiki/Implementations) working group uses wiki pages to track early implementations.
 
-Yaron Sheffer highlighted limitations with the current errata process and the existance of the ICANN project for [collaborative annotations](https://rfc-annotations.research.icann.org/) of RFCs related to DNS.
+Yaron Sheffer highlighted limitations with the current errata process and the existence of the ICANN project for [collaborative annotations](https://rfc-annotations.research.icann.org/) of RFCs related to DNS.
 
 Many other people shared thoughts on the email lists for [WG Chairs](https://mailarchive.ietf.org/arch/browse/wgchairs/) and [EDM](https://mailarchive.ietf.org/arch/browse/edm/) about how to make it easier to find code. These helped shape the practices outlined in this document.
