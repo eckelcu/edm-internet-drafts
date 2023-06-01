@@ -85,12 +85,18 @@ The ability to associate `Additional Resources` with an I-D is limited to:
 - Working group chairs of working group drafts
 - Working group chairs of RFCs produced by that working group
 
-Additionally, changes can be requested by the secretariat via <support@ietf.org>.
+Additionally, change requests can be sent to the secretariat via <support@ietf.org>.
 
 ### Guidance
 
-TODO
+The determination of the appropriateness of `Additional Resources` associated with an I-D or RFC ultimately lies in the hands of the workig group. Any code associated via a `related_implementations` tag should be:
 
+- helpful to people contributing to the definition, implementation, or deployment of the I-D or RFC to which it is being associated
+- publicly available online (e.g., via GitHub or similar)
+- licensed under an OSI-approved open source license (other licenses, including proprietary licenses, may be allowed at the descretion of the working group)
+- accompanied by clear documentation (e.g., README) on the purpose and state of the code, how to use it, how to contribute to it, and how to get help
+
+Authors of individuals drafts should consider this guidance when adding `related_implemenations` to their individual drafts. The working group and its chairs should review the apppropriateness of `related_implementations` as they would any other content within a working group draft, both when initially adding and periodically as the draft progresses from an I-D to an RFC.
 
 ## Implementation Status
 
