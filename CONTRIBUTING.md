@@ -29,31 +29,3 @@ technical issues needs to occur on the mailing list.
 
 You might also like to familiarize yourself with other
 [ documents](https://datatracker.ietf.org/program/edm/documents/).
-## Working Group Information
-
-Discussion of this work occurs on the [Evolvability, Deployability, &amp; Maintainability
- mailing list](mailto:edm@iab.org)
-([archive](https://mailarchive.ietf.org/arch/browse/edm/),
-[subscribe](https://www.iab.org/mailman/listinfo/edm)).
-In addition to contributions in GitHub, you are encouraged to participate in
-discussions there.
-
-**Note**: Some working groups adopt a policy whereby substantive discussion of
-technical issues needs to occur on the mailing list.
-
-You might also like to familiarize yourself with other
-[ documents](https://datatracker.ietf.org/program/edm/documents/).
-## Working Group Information
-
-Discussion of this work occurs on the [Evolvability, Deployability, &amp; Maintainability
- mailing list](mailto:edm@iab.org)
-([archive](https://mailarchive.ietf.org/arch/browse/edm/),
-[subscribe](https://www.iab.org/mailman/listinfo/edm)).
-In addition to contributions in GitHub, you are encouraged to participate in
-discussions there.
-
-**Note**: Some working groups adopt a policy whereby substantive discussion of
-technical issues needs to occur on the mailing list.
-
-You might also like to familiarize yourself with other
-[ documents](https://datatracker.ietf.org/program/edm/documents/).
