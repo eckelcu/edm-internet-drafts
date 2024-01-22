@@ -115,6 +115,8 @@ Known limitations of this proposal, and ongoing efforts to address them, include
   - The functionality is promoted in IETF Hackathons.
 - The ability and procedure to submit errata is not well known or used, and errata that is submitted is not always processed in a timely fashion.
   - An experiment with [collaborative annotations](https://rfc-annotations.research.icann.org/) for RFCs related to DNS has been sponsored by ICANN.
+- The GitHub service, a GitHub repository associated with an I-D or RFC as recommended in [Section 3.1](#github-repository), and code referenced in a README as recommended in [Section 3.2](#readme), may get deleted or otherwise become unavailable.
+  - Collaboration with a code archiving service or creation of an IETF code archiving service could be helpful. Such a service need not have full code history, i.e., snapshots could be sufficient.
 
 # Implementation Status
 
@@ -149,5 +151,7 @@ Adam Roach played in important role in enabling the RFC editor's ability to [inl
 Mark Nottingham provided illustrative example of how the [QUIC](https://github.com/quicwg/base-drafts/wiki/Implementations) working group uses wiki pages to track early implementations.
 
 Yaron Sheffer highlighted limitations with the current errata process and the existence of the ICANN project for [collaborative annotations](https://rfc-annotations.research.icann.org/) of RFCs related to DNS.
+
+Benson Muite highlighted the possibility of repositories getting deleted and the potential value of an archiving solution.
 
 Many other people shared thoughts on the email lists for [WG Chairs](https://mailarchive.ietf.org/arch/browse/wgchairs/) and [EDM](https://mailarchive.ietf.org/arch/browse/edm/) about how to make it easier to find code. These helped shape the practices outlined in this document.
