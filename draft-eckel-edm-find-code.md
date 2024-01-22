@@ -115,7 +115,7 @@ Known limitations of this proposal, and ongoing efforts to address them, include
   - The functionality is promoted in IETF Hackathons.
 - The ability and procedure to submit errata is not well known or used, and errata that is submitted is not always processed in a timely fashion.
   - An experiment with [collaborative annotations](https://rfc-annotations.research.icann.org/) for RFCs related to DNS has been sponsored by ICANN.
-- The GitHub service, a GitHub repository associated with an I-D or RFC as recommended in [Section 3.1](#github-repository), and code referenced in a README as recommended in [Section 3.2](#readme), may get deleted or otherwise become unavailable.
+- The GitHub service, a GitHub repository associated with an I-D or RFC (see [GitHub Repository](#github-repository)), and code referenced in a README (see [README](#readme)), may get deleted or otherwise become unavailable.
   - Collaboration with a code archiving service or creation of an IETF code archiving service could be helpful. Such a service need not have full code history, i.e., snapshots could be sufficient.
 
 # Implementation Status
