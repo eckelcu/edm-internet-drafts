@@ -1,0 +1,168 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2023-03-30T00:56:08.964856+00:00",
+  "repo": "eckelcu/draft-eckel-edm-find-code",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "MDU6SXNzdWU5NzIwNDY3NTI=",
+      "title": "Add example of inline errata",
+      "url": "https://github.com/eckelcu/draft-eckel-edm-find-code/issues/1",
+      "state": "CLOSED",
+      "author": "eckelcu",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "eckelcu"
+      ],
+      "labels": [],
+      "body": "There are no inline-errata views for v3 era RFCs at this time.\r\nFor older RFCs, we have this: https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html\r\n\r\n",
+      "createdAt": "2021-08-16T19:44:57Z",
+      "updatedAt": "2022-01-19T19:16:01Z",
+      "closedAt": "2022-01-19T19:16:00Z",
+      "comments": [
+        {
+          "author": "eckelcu",
+          "authorAssociation": "OWNER",
+          "body": "Addressed by #4 ",
+          "createdAt": "2022-01-19T19:16:00Z",
+          "updatedAt": "2022-01-19T19:16:00Z"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "MDU6SXNzdWU5NzIwNTk3NTc=",
+      "title": "Move repo to https://github.com/intarchboard",
+      "url": "https://github.com/eckelcu/draft-eckel-edm-find-code/issues/2",
+      "state": "OPEN",
+      "author": "eckelcu",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-08-16T20:04:50Z",
+      "updatedAt": "2021-08-16T20:04:50Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOFZI5Ss49IqBj",
+      "title": "reorder sections of proposal to make it flow better",
+      "url": "https://github.com/eckelcu/draft-eckel-edm-find-code/issues/3",
+      "state": "CLOSED",
+      "author": "eckelcu",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "eckelcu"
+      ],
+      "labels": [],
+      "body": "The GitHub repo and README sections should come before the Datatracker section",
+      "createdAt": "2021-10-13T20:44:00Z",
+      "updatedAt": "2022-01-19T19:15:26Z",
+      "closedAt": "2022-01-19T19:15:26Z",
+      "comments": [
+        {
+          "author": "eckelcu",
+          "authorAssociation": "OWNER",
+          "body": "Addressed by #4 ",
+          "createdAt": "2022-01-19T19:15:26Z",
+          "updatedAt": "2022-01-19T19:15:26Z"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOFZI5Ss5iClNX",
+      "title": "More guidance to chairs around what is appropriate requirement for related implementation",
+      "url": "https://github.com/eckelcu/draft-eckel-edm-find-code/issues/5",
+      "state": "OPEN",
+      "author": "dthaler",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "> The code must be publicly available, and preferably open source, though other terms of use may exist as well. \r\n\r\nAs a WG chair, I would like to have more written policy for whether (say) product websites of closed source implementations might be ok to list.   Similarly, if the code is available to members of some other SDO so you have to pay to join the SDO first.  Etc.  Rather than each WG chair having to come up with their own policy, a BCP for chairs to use if they want would be helpful.",
+      "createdAt": "2023-03-29T00:22:33Z",
+      "updatedAt": "2023-03-29T00:29:36Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 4,
+      "id": "PR_kwDOFZI5Ss4xSBUc",
+      "title": "reorder sections and add inline errata example",
+      "url": "https://github.com/eckelcu/draft-eckel-edm-find-code/pull/4",
+      "state": "MERGED",
+      "author": "eckelcu",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Address issue #1 and issue #3 ",
+      "createdAt": "2022-01-19T18:57:52Z",
+      "updatedAt": "2022-01-19T19:01:23Z",
+      "baseRepository": "eckelcu/draft-eckel-edm-find-code",
+      "baseRefName": "main",
+      "baseRefOid": "6c46b79c1574a7241052c458fb8006ed54908595",
+      "headRepository": "eckelcu/draft-eckel-edm-find-code",
+      "headRefName": "reorder",
+      "headRefOid": "9d4d2a6d253afb07e9db6c2160f35857fb8a2e31",
+      "closedAt": "2022-01-19T19:01:23Z",
+      "mergedAt": "2022-01-19T19:01:23Z",
+      "mergedBy": "eckelcu",
+      "mergeCommit": {
+        "oid": "ae3572a479ec354c574ce544f27fac103778fdff"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
